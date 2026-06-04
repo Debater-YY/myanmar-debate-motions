@@ -269,15 +269,22 @@
       overflow: hidden;
     }
 
+    
     .motion-card {
-      background: var(--dark-2);
-      padding: 1.6rem;
-      transition: background 0.2s;
-      cursor: default;
-    }
+  background: #faf8f3;
+  border: 1px solid #e6e3da;
+  border-radius: 8px;
+  padding: 1.6rem;
+  color: #111111;
+  transition: all 0.2s ease;
+  cursor: default;
+}
 
-    .motion-card:hover { background: var(--dark-3); }
-
+.motion-card:hover {
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+    
     .card-tags {
       display: flex;
       gap: 0.5rem;
