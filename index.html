@@ -404,62 +404,65 @@
       margin: 2.5rem 0;
     }
 
-    .about-values {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 1.5rem;
-      margin-top: 1.5rem;
-    }
+  .value-item {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 6px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
 
-    .value-item {
-      background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.1);
-      border-radius: 6px;
-      padding: 1.25rem;
-    }
+.value-icon {
+  font-size: 1.5rem;
+  margin-bottom: 0.6rem;
+}
 
-    .value-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
+.value-item h4 {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #000000;
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.03em;
+}
 
-    .value-item h4 {
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--cream);
-      margin-bottom: 0.4rem;
-      letter-spacing: 0.03em;
-    }
+.value-item p {
+  font-size: 0.8rem;
+  color: #333333;
+  line-height: 1.6;
+}
+    
+   .contact-box {
+  background: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 3rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
 
-    .value-item p {
-      font-size: 0.8rem;
-      color: var(--text-dim);
-      line-height: 1.6;
-    }
+.contact-box h3 {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.3rem;
+  color: #000000;
+  margin-bottom: 0.6rem;
+}
 
-    .contact-box {
-      background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.2);
-      border-radius: 8px;
-      padding: 2rem;
-      text-align: center;
-      margin-top: 3rem;
-    }
+.contact-box p {
+  color: #333333;
+  font-size: 0.88rem;
+  line-height: 1.7;
+}
 
-    .contact-box h3 {
-      font-family: 'Playfair Display', serif;
-      font-size: 1.3rem;
-      color: var(--cream);
-      margin-bottom: 0.6rem;
-    }
+.contact-box a {
+  color: #8dc63f;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-    .contact-box p {
-      color: var(--text-dim);
-      font-size: 0.88rem;
-      line-height: 1.7;
-    }
-
-    .contact-box a {
-      color: var(--gold);
-      text-decoration: none;
-    }
+.contact-box a:hover {
+  text-decoration: underline;
+}
 
     /* FOOTER */
     footer {
