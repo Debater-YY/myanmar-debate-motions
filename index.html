@@ -25,7 +25,7 @@
     * { margin: 0; padding: 0; box-sizing: border-box; }
 
     body {
-      background: var(--fffff);
+      background: #ffffff;
       color: var(--cream);
       font-family: 'DM Sans', sans-serif;
       font-weight: 300;
@@ -47,42 +47,42 @@
       height: 64px;
     }
 
- .nav-logo {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.15rem;
-  color: #ffffff;
-  letter-spacing: 0.04em;
-  cursor: pointer;
-}
+    .nav-logo {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.15rem;
+      color: #ffffff;
+      letter-spacing: 0.04em;
+      cursor: pointer;
+    }
 
-.nav-logo span {
-  display: block;
-  font-family: 'DM Sans', sans-serif;
-  font-size: 0.65rem;
-  color: #ffffff;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  font-weight: 400;
-}
+    .nav-logo span {
+      display: block;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.65rem;
+      color: #ffffff;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      font-weight: 400;
+    }
 
-.nav-links {
-  display: flex;
-  gap: 2rem;
-  list-style: none;
-}
+    .nav-links {
+      display: flex;
+      gap: 2rem;
+      list-style: none;
+    }
 
-.nav-links a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 0.88rem;
-  letter-spacing: 0.05em;
-  transition: color 0.2s;
-}
+    .nav-links a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 0.88rem;
+      letter-spacing: 0.05em;
+      transition: color 0.2s;
+    }
 
-.nav-links a:hover,
-.nav-links a.active {
-  color: #8dc63f;
-}
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #8dc63f;
+    }
 
     /* PAGES */
     .page { display: none; }
@@ -126,13 +126,6 @@
       color: var(--gold);
     }
 
-    .hero-mm {
-      font-size: 1.4rem;
-      color: var(--text-dim);
-      margin-bottom: 1.8rem;
-      letter-spacing: 0.05em;
-    }
-
     .hero-desc {
       max-width: 560px;
       margin: 0 auto 2.5rem;
@@ -148,9 +141,7 @@
       margin-top: 3rem;
     }
 
-    .stat {
-      text-align: center;
-    }
+    .stat { text-align: center; }
 
     .stat-num {
       font-family: 'Playfair Display', serif;
@@ -195,7 +186,7 @@
       border: 1px solid rgba(201,168,76,0.2);
       border-radius: 6px;
       padding: 0.65rem 1rem 0.65rem 2.5rem;
-      color: var(--cream);
+      color: #ffffff;
       font-family: 'DM Sans', sans-serif;
       font-size: 0.9rem;
       outline: none;
@@ -231,14 +222,12 @@
       letter-spacing: 0.05em;
       cursor: pointer;
       transition: all 0.2s;
-}
+    }
     .filter-btn:hover { border-color: var(--gold); color: var(--gold); }
     .filter-btn.active { background: var(--gold); color: #ffffff; border-color: var(--gold); font-weight: 600; }
 
     /* MOTIONS GRID */
-    .motions-section {
-      padding: 0 2.5rem 4rem;
-    }
+    .motions-section { padding: 0 2.5rem 4rem; }
 
     .section-header {
       display: flex;
@@ -262,29 +251,23 @@
     .motions-grid {
       display: grid;
       grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 1px;
-      background: rgba(201,168,76,0.08);
-      border: 1px solid rgba(201,168,76,0.08);
-      border-radius: 8px;
-      overflow: hidden;
+      gap: 1rem;
     }
 
-    
     .motion-card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 1.6rem;
-  color: #000000;
-  transition: box-shadow 0.2s ease;
-  cursor: default;
-}
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 1.6rem;
+      color: #000000;
+      transition: box-shadow 0.2s ease;
+      cursor: default;
+    }
 
-.motion-card:hover {
-  background: #ffffff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
-}
-    
+    .motion-card:hover {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    }
+
     .card-tags {
       display: flex;
       gap: 0.5rem;
@@ -301,26 +284,26 @@
       font-weight: 500;
     }
 
-    .tag-bp { background: rgba(41,128,185,0.2); color: #7ec8e3; border: 1px solid rgba(41,128,185,0.3); }
-    .tag-kp { background: rgba(39,174,96,0.15); color: #7dcea0; border: 1px solid rgba(39,174,96,0.25); }
-    .tag-hs { background: rgba(201,168,76,0.12); color: var(--gold-light); border: 1px solid rgba(201,168,76,0.2); }
-    .tag-uni { background: rgba(192,57,43,0.15); color: #e59484; border: 1px solid rgba(192,57,43,0.25); }
-    .tag-both { background: rgba(142,68,173,0.15); color: #c39bd3; border: 1px solid rgba(142,68,173,0.25); }
+    .tag-bp { background: rgba(41,128,185,0.15); color: #2980b9; border: 1px solid rgba(41,128,185,0.3); }
+    .tag-kp { background: rgba(39,174,96,0.12); color: #27ae60; border: 1px solid rgba(39,174,96,0.25); }
+    .tag-hs { background: rgba(201,168,76,0.12); color: #b8860b; border: 1px solid rgba(201,168,76,0.3); }
+    .tag-uni { background: rgba(192,57,43,0.1); color: #c0392b; border: 1px solid rgba(192,57,43,0.25); }
 
     .topic-tag {
-      background: rgba(255,255,255,0.04);
-      color: var(--text-dim);
-      border: 1px solid rgba(255,255,255,0.07);
+      background: #f5f5f5;
+      color: #555555;
+      border: 1px solid #dddddd;
       font-size: 0.63rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       padding: 0.2rem 0.55rem;
       border-radius: 3px;
+      font-weight: 500;
     }
 
     .motion-en {
       font-size: 0.97rem;
-      color: var(--cream);
+      color: #111111;
       line-height: 1.55;
       margin-bottom: 0.75rem;
       font-weight: 400;
@@ -328,9 +311,9 @@
 
     .motion-mm {
       font-size: 0.88rem;
-      color: var(--text-dim);
+      color: #555555;
       line-height: 1.6;
-      border-top: 1px solid rgba(255,255,255,0.05);
+      border-top: 1px solid #eeeeee;
       padding-top: 0.75rem;
     }
 
@@ -340,22 +323,16 @@
       color: var(--text-dim);
       font-size: 0.9rem;
       grid-column: 1/-1;
-      background: var(--dark-2);
+      background: #f9f9f9;
+      border-radius: 8px;
+      border: 1px solid #eeeeee;
     }
 
-    /* ABOUT PAGE */
+    /* ── ABOUT PAGE ── */
     .about-page {
       max-width: 720px;
       margin: 0 auto;
       padding: 5rem 2.5rem;
-    }
-
-    .about-eyebrow {
-      font-size: 0.72rem;
-      letter-spacing: 0.3em;
-      text-transform: uppercase;
-      color: var(--gold);
-      margin-bottom: 1rem;
     }
 
     .about-page h2 {
@@ -367,20 +344,9 @@
       margin-bottom: 0.5rem;
     }
 
-    .about-page h2 em {
-      font-style: italic;
-      color: var(--gold);
-    }
+    .about-page h2 em { font-style: italic; color: var(--gold); }
 
-    .about-mm-title {
-      font-size: 1.1rem;
-      color: var(--text-dim);
-      margin-bottom: 3rem;
-    }
-
-    .about-block {
-      margin-bottom: 2.5rem;
-    }
+    .about-block { margin-bottom: 2.5rem; }
 
     .about-block h3 {
       font-family: 'Playfair Display', serif;
@@ -404,65 +370,181 @@
       margin: 2.5rem 0;
     }
 
-  .value-item {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 6px;
-  padding: 1.25rem;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-}
+    .about-values {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
 
-.value-icon {
-  font-size: 1.5rem;
-  margin-bottom: 0.6rem;
-}
+    .value-item {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 6px;
+      padding: 1.25rem;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
 
-.value-item h4 {
-  font-size: 0.85rem;
-  font-weight: 600;
-  color: #000000;
-  margin-bottom: 0.4rem;
-  letter-spacing: 0.03em;
-}
+    .value-icon { font-size: 1.5rem; margin-bottom: 0.6rem; }
 
-.value-item p {
-  font-size: 0.8rem;
-  color: #333333;
-  line-height: 1.6;
-}
-    
-   .contact-box {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 2rem;
-  text-align: center;
-  margin-top: 3rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-}
+    .value-item h4 {
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 0.4rem;
+      letter-spacing: 0.03em;
+    }
 
-.contact-box h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 1.3rem;
-  color: #000000;
-  margin-bottom: 0.6rem;
-}
+    .value-item p { font-size: 0.8rem; color: #333333; line-height: 1.6; }
 
-.contact-box p {
-  color: #333333;
-  font-size: 0.88rem;
-  line-height: 1.7;
-}
+    .contact-box {
+      background: #ffffff;
+      border: 1px solid #e0e0e0;
+      border-radius: 8px;
+      padding: 2rem;
+      text-align: center;
+      margin-top: 3rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
 
-.contact-box a {
-  color: #8dc63f;
-  text-decoration: none;
-  font-weight: 600;
-}
+    .contact-box h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.3rem;
+      color: #000000;
+      margin-bottom: 0.6rem;
+    }
 
-.contact-box a:hover {
-  text-decoration: underline;
-}
+    .contact-box p { color: #333333; font-size: 0.88rem; line-height: 1.7; }
+
+    .contact-box a { color: #8dc63f; text-decoration: none; font-weight: 600; }
+    .contact-box a:hover { text-decoration: underline; }
+
+    /* ── FAQ PAGE ── */
+    .faq-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 5rem 2.5rem;
+    }
+
+    .faq-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .faq-page h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: #000000;
+      margin-bottom: 0.4rem;
+    }
+
+    .faq-page h2 em { font-style: italic; color: var(--gold); }
+
+    .faq-subtitle {
+      font-size: 0.95rem;
+      color: #666666;
+      margin-bottom: 3rem;
+      line-height: 1.6;
+    }
+
+    .faq-section-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      color: var(--gold);
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 1px solid rgba(141,198,63,0.2);
+      letter-spacing: 0.02em;
+    }
+
+    .faq-item {
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      margin-bottom: 0.75rem;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+
+    .faq-item:hover { box-shadow: 0 2px 8px rgba(0,0,0,0.06); }
+
+    .faq-question {
+      width: 100%;
+      background: #ffffff;
+      border: none;
+      padding: 1.1rem 1.4rem;
+      text-align: left;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #111111;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+
+    .faq-question:hover { background: #f9fdf4; }
+    .faq-question.open { background: #f4fce8; color: #4a7a0a; }
+
+    .faq-chevron {
+      font-size: 0.75rem;
+      color: var(--gold);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .faq-question.open .faq-chevron { transform: rotate(180deg); }
+
+    .faq-answer {
+      display: none;
+      padding: 0 1.4rem 1.2rem;
+      background: #fafff5;
+      border-top: 1px solid #e8f5d0;
+    }
+
+    .faq-answer.open { display: block; }
+
+    .faq-answer p {
+      font-size: 0.9rem;
+      color: #333333;
+      line-height: 1.8;
+      margin-bottom: 0.6rem;
+    }
+
+    .faq-answer p:last-child { margin-bottom: 0; }
+
+    .faq-answer ul {
+      margin: 0.5rem 0 0.5rem 1.2rem;
+      font-size: 0.9rem;
+      color: #333333;
+      line-height: 1.8;
+    }
+
+    .faq-answer ul li { margin-bottom: 0.3rem; }
+
+    .faq-answer strong { color: #111111; font-weight: 600; }
+
+    .faq-answer .tag-inline {
+      display: inline-block;
+      font-size: 0.7rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.15rem 0.5rem;
+      border-radius: 3px;
+      margin-right: 0.3rem;
+    }
+
+    .faq-answer .tag-inline.bp { background: rgba(41,128,185,0.12); color: #2980b9; border: 1px solid rgba(41,128,185,0.25); }
+    .faq-answer .tag-inline.kp { background: rgba(39,174,96,0.1); color: #27ae60; border: 1px solid rgba(39,174,96,0.2); }
 
     /* FOOTER */
     footer {
@@ -483,7 +565,7 @@
       .hero { padding: 4rem 1.2rem 3rem; }
       .filter-bar { padding: 1.5rem 1.2rem; }
       .motions-section { padding: 0 1.2rem 3rem; }
-      .about-page { padding: 3rem 1.2rem; }
+      .about-page, .faq-page { padding: 3rem 1.2rem; }
       .motions-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 1.5rem; }
       .about-values { grid-template-columns: 1fr; }
@@ -500,6 +582,7 @@
   </div>
   <ul class="nav-links">
     <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Motions</a></li>
+    <li><a href="#" onclick="showPage('faq')" id="nav-faq">FAQ</a></li>
     <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
   </ul>
 </nav>
@@ -509,7 +592,6 @@
   <section class="hero">
     <p class="hero-eyebrow">Myanmar's Debate Resource</p>
     <h1>Myanmar Debate <em>Motions</em></h1>
-
     <p class="hero-desc">A free, open collection of debate motions built for Myanmar's context — in English and Burmese, for both BP and KP formats.</p>
     <div class="hero-stats">
       <div class="stat">
@@ -521,7 +603,7 @@
         <div class="stat-label">Formats</div>
       </div>
       <div class="stat">
-        <div class="stat-num">5</div>
+        <div class="stat-num">6</div>
         <div class="stat-label">Topics</div>
       </div>
     </div>
@@ -551,6 +633,7 @@
       <button class="filter-btn" data-filter="topic" data-val="Technology" onclick="setFilter('topic','Technology',this)">Technology</button>
       <button class="filter-btn" data-filter="topic" data-val="Environment" onclick="setFilter('topic','Environment',this)">Environment</button>
       <button class="filter-btn" data-filter="topic" data-val="Regional" onclick="setFilter('topic','Regional',this)">Regional</button>
+      <button class="filter-btn" data-filter="topic" data-val="Education" onclick="setFilter('topic','Education',this)">Education</button>
     </div>
   </div>
 
@@ -563,25 +646,186 @@
   </section>
 </div>
 
+<!-- FAQ PAGE -->
+<div class="page" id="page-faq">
+  <div class="faq-page">
+    <p class="faq-eyebrow">Learn the Basics</p>
+    <h2>Frequently Asked <em>Questions</em></h2>
+    <p class="faq-subtitle">New to debate motions? This page answers the most common questions about what motions are, how they work, and how BP and KP formats differ.</p>
+
+    <div class="faq-section-title">📌 General</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is a debate motion?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>A <strong>debate motion</strong> is a statement or proposition that debaters argue for or against. It defines the topic of the debate. One side (the Government or Proposition) argues in favor of the motion, while the other side (the Opposition) argues against it.</p>
+        <p>Example: <em>"This House would ban private tutoring."</em> — the Government argues why banning it is good; the Opposition argues why it should not be banned.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How do I make a motion definition?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>A <strong>motion definition</strong> clarifies what the motion means so both sides debate the same thing. A good definition includes:</p>
+        <ul>
+          <li><strong>Key terms</strong> — define unclear or contested words in the motion</li>
+          <li><strong>Scope</strong> — explain what the motion covers (which country, which group, which time period)</li>
+          <li><strong>The model</strong> — describe what the policy or change would look like in practice</li>
+        </ul>
+        <p>Example: For <em>"THW ban private tutoring"</em>, you would define "private tutoring" (paid, one-on-one or small group academic coaching outside school), clarify the scope (e.g., Myanmar, all levels), and describe how the ban works (who enforces it, what counts as a violation).</p>
+        <p>A definition should be <strong>fair and reasonable</strong> — not so narrow that it makes the motion impossible to oppose, and not so broad that it changes the spirit of the motion.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What do THW, THBT, THS, and THFW mean?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>These are standard shorthand prefixes used in debate motions:</p>
+        <ul>
+          <li><strong>THW</strong> — This House Would (proposes a policy or action)</li>
+          <li><strong>THBT</strong> — This House Believes That (makes a factual or value claim)</li>
+          <li><strong>THS</strong> — This House Supports (expresses backing for a position or movement)</li>
+          <li><strong>THFW</strong> — This House Would Further (builds on an existing policy or situation)</li>
+        </ul>
+        <p>"This House" refers to the debating chamber as a whole — it's a traditional parliamentary phrase.</p>
+      </div>
+    </div>
+
+    <div class="faq-section-title">🏛️ British Parliamentary (BP) Format</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is British Parliamentary (BP) debate?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>British Parliamentary (BP)</strong> is the most widely used competitive debate format in the world, used at WUDC (World Universities Debating Championship) and many regional tournaments.</p>
+        <p>A BP round has <strong>4 teams of 2 speakers</strong> — two Government teams and two Opposition teams — all competing against each other in a single round. Speakers give 7-minute speeches, with Points of Information (POIs) allowed during the middle 5 minutes.</p>
+        <ul>
+          <li><strong>Opening Government (OG)</strong> — sets the definition and the main case</li>
+          <li><strong>Opening Opposition (OO)</strong> — opposes the motion</li>
+          <li><strong>Closing Government (CG)</strong> — extends OG's case with a new argument</li>
+          <li><strong>Closing Opposition (CO)</strong> — extends OO's case with a new argument</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How many types of motions are used in BP debate?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>BP motions generally fall into these main types:</p>
+        <ul>
+          <li><strong>Policy motions</strong> — propose a specific action or law (e.g., "THW ban X", "THW give Y to Z")</li>
+          <li><strong>Belief/value motions</strong> — argue for a claim or principle (e.g., "THBT economic growth matters more than equality")</li>
+          <li><strong>Support motions</strong> — express backing for a movement or trend (e.g., "THS the rise of nationalist movements in Southeast Asia")</li>
+          <li><strong>Comparative motions</strong> — argue that one option is better than another (e.g., "THBT X is preferable to Y")</li>
+          <li><strong>Actor motions</strong> — put debaters in the role of a specific actor making a decision (e.g., "THW, as the UN, impose sanctions on X")</li>
+        </ul>
+        <p>BP motions are typically released only <strong>15 minutes</strong> before the round, so preparation speed and flexibility are key skills.</p>
+      </div>
+    </div>
+
+    <div class="faq-section-title">⚖️ Karl Popper (KP) Format</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is Karl Popper (KP) debate?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p><strong>Karl Popper (KP)</strong> debate is a research-based format designed to encourage critical thinking on complex social, political, and ethical issues. It is widely used at the high school level and named after the philosopher Karl Popper.</p>
+        <p>A KP round has <strong>2 teams of 3 speakers</strong> — one Proposition team and one Opposition team. Unlike BP, KP allows preparation time before the tournament, so teams research their topic in advance.</p>
+        <p>Each speaker gives a constructive speech (6 minutes) and a rebuttal or cross-examination, with cross-examination periods between speeches where the opposing team asks questions.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        How many types of motions are used in KP debate?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>KP motions are usually written as clear, resolvable statements. Common types include:</p>
+        <ul>
+          <li><strong>Policy resolutions</strong> — propose a specific government or institutional policy (e.g., "Myanmar should prioritize X over Y")</li>
+          <li><strong>Value resolutions</strong> — argue for a moral or philosophical principle (e.g., "Justice matters more than stability in post-conflict societies")</li>
+          <li><strong>Fact resolutions</strong> — argue whether something is true or false (e.g., "Economic sanctions are an effective tool for political change")</li>
+        </ul>
+        <p>KP motions are <strong>pre-announced</strong> — teams know the topic days or weeks before the tournament and can prepare evidence, research, and structured arguments in advance.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        What is the difference between BP and KP motions?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>The key differences between BP and KP motions:</p>
+        <ul>
+          <li><strong>Preparation:</strong> BP motions are given only 15 minutes before the round. KP motions are announced in advance, allowing full research preparation.</li>
+          <li><strong>Phrasing:</strong> BP motions often use "This House Would/Believes" language. KP motions are often phrased as direct resolution statements.</li>
+          <li><strong>Scope:</strong> BP motions cover a very wide range of global, abstract, or hypothetical scenarios. KP motions tend to be more grounded and research-focused.</li>
+          <li><strong>Evidence:</strong> In KP, debaters are expected to bring evidence and statistics to support their arguments. In BP, logical reasoning and examples carry more weight than cited sources.</li>
+          <li><strong>Format:</strong> BP has 4 teams competing simultaneously; KP is a direct 2-team contest.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="faq-section-title">🇲🇲 Myanmar Context</div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Why are there motions specific to Myanmar?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Most international debate motion banks focus on global or Western contexts. Myanmar debaters often have to adapt foreign motions or debate topics that feel distant from their own experience.</p>
+        <p>This library was built to fill that gap — offering motions that reflect <strong>real issues in Myanmar</strong>: federalism, ethnic reconciliation, social media regulation, environmental policy, education access, and more.</p>
+        <p>Debating locally relevant topics helps debaters develop stronger arguments, connect theory to real-world stakes, and engage more meaningfully with the issues that shape their communities.</p>
+      </div>
+    </div>
+
+    <div class="faq-item">
+      <button class="faq-question" onclick="toggleFaq(this)">
+        Can I use these motions for my school or university debate club?
+        <span class="faq-chevron">▼</span>
+      </button>
+      <div class="faq-answer">
+        <p>Yes — all motions in this library are <strong>free to use</strong> for practice rounds, internal tournaments, training sessions, or any non-commercial educational purpose.</p>
+        <p>If you find the library helpful or would like to contribute new motions, please reach out at <strong>yeyintmaung2027@gmail.com</strong>. The library grows stronger with community contributions.</p>
+      </div>
+    </div>
+
+  </div>
+</div>
+
 <!-- ABOUT PAGE -->
 <div class="page" id="page-about">
   <div class="about-page">
-   <h2>About This <em>Library</em></h2>
-  <div class="about-block">
-    
+    <h2>About This <em>Library</em></h2>
+    <div class="about-block">
       <h3>What This Library Offers</h3>
-    
-      <p>This library is a free and open collection of debate motions developed for Myanmar's social, political, economic, and cultural contexts. Every motion is available in both English and Burmese and is organized by format (BP or KP) and level (High School or University), making it easier for debaters, trainers, and clubs to find relevant motions.
-</p>
+      <p>This library is a free and open collection of debate motions developed for Myanmar's social, political, economic, and cultural contexts. Every motion is available in both English and Burmese and is organized by format (BP or KP) and level (High School or University), making it easier for debaters, trainers, and clubs to find relevant motions.</p>
     </div>
 
     <div class="about-block">
       <h3>Why This Library Matters</h3>
       <p>For Myanmar debaters, the places where we can discover, research, and collect debate motions are still limited. While motions are used across schools, universities, and debate clubs, there has not been a dedicated platform where Myanmar debaters can easily access and share them.</p>
-      
-   <p>This library was created to help fill that gap. It serves as a shared space where debaters can find motions, contribute new ones, and learn from debates taking place across different communities.</p>
-
-<p>By making motions more accessible, we hope to encourage the exchange of ideas and approaches between debaters from different regions and institutions. A motion debated in one place can inspire new perspectives in another. This library exists to support that exchange and to strengthen Myanmar's debate community through shared knowledge and resources.</p>
+      <p>This library was created to help fill that gap. It serves as a shared space where debaters can find motions, contribute new ones, and learn from debates taking place across different communities.</p>
+      <p>By making motions more accessible, we hope to encourage the exchange of ideas and approaches between debaters from different regions and institutions. A motion debated in one place can inspire new perspectives in another. This library exists to support that exchange and to strengthen Myanmar's debate community through shared knowledge and resources.</p>
     </div>
 
     <div class="about-divider"></div>
@@ -590,12 +834,12 @@
       <h3>Our Values</h3>
       <div class="about-values">
         <div class="value-item">
-         <div class="value-icon">🗺️</div>
+          <div class="value-icon">🗺️</div>
           <h4>Locally Relevant</h4>
           <p>Motions that reflect real Myanmar contexts.</p>
         </div>
         <div class="value-item">
-<div class="value-icon">💬</div>
+          <div class="value-icon">💬</div>
           <h4>Bilingual</h4>
           <p>Every motion in English and Burmese so no one is left behind by language.</p>
         </div>
@@ -610,14 +854,14 @@
     <div class="about-divider"></div>
 
     <div class="about-block">
-    <h3>Behind the Library</h3>
-<p>This library was created by a Myanmar debater with the goal of strengthening and supporting the local debate community. It began with a simple question: why is there no dedicated motion library built for Myanmar debaters?</p>
+      <h3>Behind the Library</h3>
+      <p>This library was created by a Myanmar debater with the goal of strengthening and supporting the local debate community. It began with a simple question: why is there no dedicated motion library built for Myanmar debaters?</p>
     </div>
 
     <div class="contact-box">
       <h3>Want to Contribute?</h3>
       <p>If you'd like to contribute motions, suggest improvements, or collaborate, please get in touch. Have motions to share? Found an error? Want to help build this further?<br/>
-   Reach out at <a href="mailto:yeyintmaung2027@gmail.com">yeyintmaung2027@gmail.com</a>
+      Reach out at <a href="mailto:yeyintmaung2027@gmail.com">yeyintmaung2027@gmail.com</a></p>
     </div>
   </div>
 </div>
@@ -631,16 +875,16 @@
   // ── MOTION DATA ──────────────────────────────────────────────────────────
   const motions = [
     // POLITICS
-    { id:1, format:"BP", level:"University", topic:"Politics", en:"This House believes that BBU Burmese media should abandon their attempts to bring 'political balance' to their news.", mm:"ဤလွှတ်တော်သည် ဘီဘီစီမြန်မာပိုင်းသတင်းမီဒီယာအနေဖြင့်  သတင်းအစီအစဉ်များတွင် သတင်းအချက်အလက်မှန်ကန်မှုထက် နိုင်ငံရေးအရမျှတမှုရှိစေရန် ကြိုးပမ်းဆောင်ရွက်မှုများကို စွန့်လွှတ်သင့်သည်ဟု ယုံကြည်သည်။" },
-    { id:2, format:"BP", level:"University", topic:"Politics", en:"This House would offer dictators political asylum in return for stepping down from power.", mm:"ဤလွှတ်တော်သည် အာဏာရှင်များအနေဖြင့် အာဏာမှ နုတ်ထွက်ပေးခြင်းအတွက် အပြန်အလှန်အနေဖြင့် သူတို့အား နိုင်ငံရေးခိုလှုံခွင့် ပေးအပ်သွားမည်။" },
+    { id:1, format:"BP", level:"University", topic:"Politics", en:"This House believes that BBU Burmese media should abandon their attempts to bring 'political balance' to their news.", mm:"ဤလွှတ်တော်သည် ဘီဘီစီမြန်မာပိုင်းသတင်းမီဒီယာအနေဖြင့်  သတင်းအစီအစဉ်များတွင် သတင်းအချက်အလက်မှန်ကန်မှုထက် နိုင်ငံရေးအရမျှတမှုရှိစေရန် ကြိုးပမ်းဆောင်ရွက်မှုများကို စွန့်လွှတ်သင့်သည်ဟု ယုံကြည်သည်။" },
+    { id:2, format:"BP", level:"University", topic:"Politics", en:"This House would offer dictators political asylum in return for stepping down from power.", mm:"ဤလွှတ်တော်သည် အာဏာရှင်များအနေဖြင့် အာဏာမှ နုတ်ထွက်ပေးခြင်းအတွက် အပြန်အလှန်အနေဖြင့် သူတို့အား နိုင်ငံရေးခိုလှုံခွင့် ပေးအပ်သွားမည်။" },
     { id:3, format:"KP", level:"University", topic:"Politics", en:"Myanmar should prioritize national reconciliation over transitional justice.", mm:"မြန်မာနိုင်ငံသည် အကူးအပြောင်းကာလ တရားမျှတမှုထက် အမျိုးသားရင်ကြားစေ့ရေးကို ဦးစားပေးသင့်သည်။" },
     { id:4, format:"KP", level:"University", topic:"Politics", en:"The federalism is the best path to lasting peace in Myanmar.", mm:"ဖက်ဒရယ်စနစ်သည် မြန်မာနိုင်ငံတွင် ကြာရှည်ခံသော ငြိမ်းချမ်းရေးအတွက် အကောင်းဆုံးသောလမ်းကြောင်းဖြစ်သည်။" },
 
     // ECONOMY
     { id:5, format:"KP", level:"University", topic:"Economy", en:"Myanmar should place domestic self-sufficiency above export-driven economic growth.", mm:"မြန်မာနိုင်ငံသည် ပို့ကုန်တိုးတက်မှုထက် ပြည်တွင်းဖူလုံမှုကို ဦးစားပေးသင့်သည်။" },
-    { id:6, format:"BP", level:"University", topic:"Economy", en:"This house supports the use of generative AI (e.g. ChatGPT, Google Gemini,Claude) in the workplace.", mm:"ဤလွှတ်တော်သည် လုပ်ငန်းခွင်တွင် ဖန်တီးနိုင်စွမ်းရှိသော ဉာဏ်ရည်တုနည်းပညာများ (ဥပမာ — ChatGPT, Google Gemini, Claude) အသုံးပြုမှုကို ထောက်ခံသည်။" },
-    { id:7, format:"BP", level:"University", topic:"Economy",topic:"Environment", en:"This house believes that governments in Myanmar should prioritize economic development over environmental concerns when pursuing projects.", mm:"ဤလွှတ်တော်သည် မြန်မာနိုင်ငံသည် စီမံကိန်းများဆောင်ရွက်ရာတွင် သဘာဝပတ်ဝန်းကျင်ဆိုင်ရာ စိုးရိမ်မှုများထက် စီးပွားရေးဖွံ့ဖြိုးတိုးတက်မှုကို ဦးစားပေးသင့်သည်ဟု ယုံကြည်သည်။" },
-    { id:8, format:"BP", level:"University", topic:"Economy", topic:"Politics", en:"This House would give the youth a veto on economic policy that may affect the environment.", mm:"ဤလွှတ်တော်သည် သဘာဝပတ်ဝန်းကျင်ကို သက်ရောက်နိုင်သော စီးပွားရေးမူဝါဒများတွင် လူငယ်များအား တားဆီးပိတ်ပင်ခွင့် / ဗီတိုအခွင့်အရေး ပေးအပ်သွားမည်။" },
+    { id:6, format:"BP", level:"University", topic:"Economy", en:"This house supports the use of generative AI (e.g. ChatGPT, Google Gemini, Claude) in the workplace.", mm:"ဤလွှတ်တော်သည် လုပ်ငန်းခွင်တွင် ဖန်တီးနိုင်စွမ်းရှိသော ဉာဏ်ရည်တုနည်းပညာများ (ဥပမာ — ChatGPT, Google Gemini, Claude) အသုံးပြုမှုကို ထောက်ခံသည်။" },
+    { id:7, format:"BP", level:"University", topic:["Economy","Environment"], en:"This house believes that governments in Myanmar should prioritize economic development over environmental concerns when pursuing projects.", mm:"ဤလွှတ်တော်သည် မြန်မာနိုင်ငံသည် စီမံကိန်းများဆောင်ရွက်ရာတွင် သဘာဝပတ်ဝန်းကျင်ဆိုင်ရာ စိုးရိမ်မှုများထက် စီးပွားရေးဖွံ့ဖြိုးတိုးတက်မှုကို ဦးစားပေးသင့်သည်ဟု ယုံကြည်သည်။" },
+    { id:8, format:"BP", level:"University", topic:["Economy","Politics"], en:"This House would give the youth a veto on economic policy that may affect the environment.", mm:"ဤလွှတ်တော်သည် သဘာဝပတ်ဝန်းကျင်ကို သက်ရောက်နိုင်သော စီးပွားရေးမူဝါဒများတွင် လူငယ်များအား တားဆီးပိတ်ပင်ခွင့် / ဗီတိုအခွင့်အရေး ပေးအပ်သွားမည်။" },
 
     // TECHNOLOGY
     { id:9, format:"BP", level:"High School", topic:"Technology", en:"THW ban TikTok and similar short-video platforms in Myanmar schools.", mm:"မြန်မာ ကျောင်းများတွင် TikTok နှင့် ဆင်တူသော ဗီဒီယိုတိုပလပ်ဖောင်းများကို တားမြစ်သင့်သည်။" },
@@ -660,9 +904,9 @@
     { id:19, format:"KP", level:"High School", topic:"Regional", en:"Myanmar should increase youth exchange programs with neighboring ASEAN countries.", mm:"မြန်မာနိုင်ငံသည် အိမ်နီးချင်း ASEAN နိုင်ငံများနှင့် လူငယ်ဖလှယ်ရေး အစီအစဉ်များကို တိုးမြှင့်သင့်သည်။" },
     { id:20, format:"KP", level:"University", topic:"Regional", en:"THBT Myanmar's long-term security depends more on ASEAN multilateralism than bilateral relations with major powers.", mm:"မြန်မာနိုင်ငံ၏ ရေရှည်လုံခြုံရေးသည် ကြီးမားသောအာဏာများနှင့် နှစ်နိုင်ငံဆက်ဆံရေးထက် ASEAN ဘက်စုံနှင့် ပတ်သက်မှုအပေါ် မူတည်နေသည်။" },
 
-      // Education
+    // EDUCATION
     { id:21, format:"BP", level:"High School", topic:"Education", en:"This house would ban private tutoring.", mm:"ဤလွှတ်တော်သည် ပုဂ္ဂလိကကျူရှင်များကို ပိတ်ပင်သွားမည်။" },
-     ];
+  ];
 
   // ── STATE ────────────────────────────────────────────────────────────────
   const activeFilters = { format: 'all', level: 'all', topic: 'all' };
@@ -681,12 +925,13 @@
     grid.innerHTML = list.map(m => {
       const fmtClass = m.format === 'BP' ? 'tag-bp' : 'tag-kp';
       const lvlClass = m.level === 'High School' ? 'tag-hs' : 'tag-uni';
+      const topicDisplay = Array.isArray(m.topic) ? m.topic.join(' · ') : m.topic;
       return `
         <div class="motion-card">
           <div class="card-tags">
             <span class="tag ${fmtClass}">${m.format}</span>
             <span class="tag ${lvlClass}">${m.level}</span>
-            <span class="topic-tag">${m.topic}</span>
+            <span class="topic-tag">${topicDisplay}</span>
           </div>
           <p class="motion-en">${m.en}</p>
           <p class="motion-mm">${m.mm}</p>
@@ -711,6 +956,22 @@
     document.querySelectorAll(`[data-filter="${type}"]`).forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     filterMotions();
+  }
+
+  // ── FAQ ACCORDION ────────────────────────────────────────────────────────
+  function toggleFaq(btn) {
+    const answer = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    // Close all
+    document.querySelectorAll('.faq-question.open').forEach(q => {
+      q.classList.remove('open');
+      q.nextElementSibling.classList.remove('open');
+    });
+    // Open clicked if it was closed
+    if (!isOpen) {
+      btn.classList.add('open');
+      answer.classList.add('open');
+    }
   }
 
   // ── NAVIGATION ───────────────────────────────────────────────────────────
