@@ -659,11 +659,10 @@
     { id:18, format:"BP", level:"University", topic:"Regional", en:"THBT Myanmar should deepen economic ties with China over Western nations.", mm:"မြန်မာနိုင်ငံသည် အနောက်နိုင်ငံများထက် တရုတ်နိုင်ငံနှင့် စီးပွားရေးဆက်ဆံရေးကို ပိုမိုနက်ရှိုင်းစေသင့်သည်။" },
     { id:19, format:"KP", level:"High School", topic:"Regional", en:"Myanmar should increase youth exchange programs with neighboring ASEAN countries.", mm:"မြန်မာနိုင်ငံသည် အိမ်နီးချင်း ASEAN နိုင်ငံများနှင့် လူငယ်ဖလှယ်ရေး အစီအစဉ်များကို တိုးမြှင့်သင့်သည်။" },
     { id:20, format:"KP", level:"University", topic:"Regional", en:"THBT Myanmar's long-term security depends more on ASEAN multilateralism than bilateral relations with major powers.", mm:"မြန်မာနိုင်ငံ၏ ရေရှည်လုံခြုံရေးသည် ကြီးမားသောအာဏာများနှင့် နှစ်နိုင်ငံဆက်ဆံရေးထက် ASEAN ဘက်စုံနှင့် ပတ်သက်မှုအပေါ် မူတည်နေသည်။" },
-  ];
 
       // Education
     { id:21, format:"BP", level:"High School", topic:"Education", en:"This house would ban private tutoring.", mm:"ဤလွှတ်တော်သည် ပုဂ္ဂလိကကျူရှင်များကို ပိတ်ပင်သွားမည်။" },
-    
+     ];
 
   // ── STATE ────────────────────────────────────────────────────────────────
   const activeFilters = { format: 'all', level: 'all', topic: 'all' };
@@ -700,7 +699,7 @@
     const filtered = motions.filter(m => {
       const matchFormat = activeFilters.format === 'all' || m.format === activeFilters.format;
       const matchLevel  = activeFilters.level  === 'all' || m.level  === activeFilters.level;
-      const matchTopic  = activeFilters.topic  === 'all' || m.topic  === activeFilters.topic;
+      const matchTopic  = activeFilters.topic  === 'all' || [].concat(m.topic).includes(activeFilters.topic);
       const matchSearch = !q || m.en.toLowerCase().includes(q) || m.mm.includes(q);
       return matchFormat && matchLevel && matchTopic && matchSearch;
     });
