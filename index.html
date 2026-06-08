@@ -546,6 +546,166 @@
     .faq-answer .tag-inline.bp { background: rgba(41,128,185,0.12); color: #2980b9; border: 1px solid rgba(41,128,185,0.25); }
     .faq-answer .tag-inline.kp { background: rgba(39,174,96,0.1); color: #27ae60; border: 1px solid rgba(39,174,96,0.2); }
 
+    /* ── GUIDE PAGE ── */
+    .guide-page {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 5rem 2.5rem;
+    }
+
+    .guide-eyebrow {
+      font-size: 0.72rem;
+      letter-spacing: 0.3em;
+      text-transform: uppercase;
+      color: var(--gold);
+      margin-bottom: 1rem;
+    }
+
+    .guide-page h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.8rem;
+      font-weight: 900;
+      line-height: 1.1;
+      color: #000000;
+      margin-bottom: 0.4rem;
+    }
+
+    .guide-page h2 em { font-style: italic; color: var(--gold); }
+
+    .guide-subtitle {
+      font-size: 0.95rem;
+      color: #666666;
+      margin-bottom: 2rem;
+      line-height: 1.6;
+    }
+
+    .guide-divider {
+      height: 1px;
+      background: rgba(141,198,63,0.2);
+      margin: 2rem 0;
+    }
+
+    .guide-article {
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      padding: 2.5rem;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.05);
+    }
+
+    .guide-article-meta {
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+
+    .guide-tag {
+      font-size: 0.65rem;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      background: rgba(141,198,63,0.12);
+      color: #5a8a1a;
+      border: 1px solid rgba(141,198,63,0.25);
+    }
+
+    .guide-article h3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      font-weight: 900;
+      color: #000000;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+    }
+
+    .guide-article h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #000000;
+      margin: 2rem 0 0.75rem;
+    }
+
+    .guide-article p {
+      font-size: 0.95rem;
+      color: #333333;
+      line-height: 1.85;
+      margin-bottom: 1rem;
+    }
+
+    .guide-article em { color: #5a8a1a; font-style: italic; }
+
+    .guide-checklist {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin: 1.25rem 0 1.5rem;
+    }
+
+    .guide-check-item {
+      display: flex;
+      gap: 1rem;
+      align-items: flex-start;
+      background: #f9fdf4;
+      border: 1px solid #e0f0c8;
+      border-radius: 8px;
+      padding: 1rem 1.2rem;
+    }
+
+    .guide-check-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: var(--gold);
+      flex-shrink: 0;
+      min-width: 28px;
+      margin-top: 0.1rem;
+    }
+
+    .guide-check-item strong {
+      display: block;
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #111111;
+      margin-bottom: 0.25rem;
+    }
+
+    .guide-check-item p {
+      font-size: 0.85rem;
+      color: #555555;
+      line-height: 1.6;
+      margin: 0;
+    }
+
+    .guide-author {
+      margin-top: 2.5rem;
+      padding-top: 1.5rem;
+    }
+
+    .guide-author-line {
+      height: 1px;
+      background: #e8e8e8;
+      margin-bottom: 1rem;
+    }
+
+    .guide-author-name {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #000000;
+      margin: 0 0 0.2rem !important;
+    }
+
+    .guide-author-date {
+      font-size: 0.8rem;
+      color: #888888;
+      letter-spacing: 0.05em;
+      margin: 0 !important;
+    }
+
     /* FOOTER */
     footer {
       border-top: 1px solid rgba(201,168,76,0.1);
@@ -565,7 +725,7 @@
       .hero { padding: 4rem 1.2rem 3rem; }
       .filter-bar { padding: 1.5rem 1.2rem; }
       .motions-section { padding: 0 1.2rem 3rem; }
-      .about-page, .faq-page { padding: 3rem 1.2rem; }
+      .about-page, .faq-page, .guide-page { padding: 3rem 1.2rem; }
       .motions-grid { grid-template-columns: 1fr; }
       .hero-stats { gap: 1.5rem; }
       .about-values { grid-template-columns: 1fr; }
@@ -583,6 +743,7 @@
   <ul class="nav-links">
     <li><a href="#" onclick="showPage('home')" id="nav-home" class="active">Motions</a></li>
     <li><a href="#" onclick="showPage('faq')" id="nav-faq">FAQ</a></li>
+    <li><a href="#" onclick="showPage('guide')" id="nav-guide">Guide</a></li>
     <li><a href="#" onclick="showPage('about')" id="nav-about">About</a></li>
   </ul>
 </nav>
@@ -808,6 +969,109 @@
         <p>If you find the library helpful or would like to contribute new motions, please reach out at <strong>yeyintmaung2027@gmail.com</strong>. The library grows stronger with community contributions.</p>
       </div>
     </div>
+
+  </div>
+</div>
+
+<!-- GUIDE PAGE -->
+<div class="page" id="page-guide">
+  <div class="guide-page">
+
+    <p class="guide-eyebrow">For Debaters & Coaches</p>
+    <h2>Motion <em>Guide</em></h2>
+    <p class="guide-subtitle">A practical guide to understanding, approaching, and mastering debate motions — with a focus on the most challenging motion type of all.</p>
+
+    <div class="guide-divider"></div>
+
+    <!-- BLOG POST -->
+    <article class="guide-article">
+      <div class="guide-article-meta">
+        <span class="guide-tag">Policy Motions</span>
+        <span class="guide-tag">BP & KP</span>
+        <span class="guide-tag">Competitive Debate</span>
+      </div>
+
+      <h3>Policy Motions: The Hardest Motions in Debate</h3>
+
+      <p>If you have been debating for a while, you already know the feeling. The motion drops. You read it. It starts with <em>"This House Would…"</em> — and suddenly you are not just arguing a belief or a value. You are being asked to <em>do something</em>. To build a policy. To make it work.</p>
+
+      <p>Policy motions are a different beast. And they are not placed at the beginning of a tournament by accident. You find them in semifinals. You find them in finals. Because they are the motions that separate good debaters from great ones.</p>
+
+      <h4>What Makes Policy Motions Different</h4>
+
+      <p>Most motions ask you to argue. Policy motions ask you to <em>govern</em>. When a motion calls for an action — a ban, a law, a program, a reform — the Government team cannot simply say the idea is good. They have to show that it <em>works</em>.</p>
+
+      <p>This is what makes policy motions both exciting and dangerous. A strong belief argument can carry a team through a values debate. But in a policy round, a weak mechanism breaks your entire case.</p>
+
+      <h4>What Every Policy Must Answer</h4>
+
+      <p>When you face a policy motion, think of yourself as a policymaker, not just a debater. Your policy needs to answer six questions before you walk into the room:</p>
+
+      <div class="guide-checklist">
+        <div class="guide-check-item">
+          <span class="guide-check-num">01</span>
+          <div>
+            <strong>What is the action?</strong>
+            <p>Be precise. Vague policies lose rounds. Define exactly what your government is doing.</p>
+          </div>
+        </div>
+        <div class="guide-check-item">
+          <span class="guide-check-num">02</span>
+          <div>
+            <strong>Who carries it out?</strong>
+            <p>Name the actor — which ministry, institution, or body is responsible. This is your focal point.</p>
+          </div>
+        </div>
+        <div class="guide-check-item">
+          <span class="guide-check-num">03</span>
+          <div>
+            <strong>How does it happen?</strong>
+            <p>Describe the mechanism. How is the policy enforced, funded, or implemented?</p>
+          </div>
+        </div>
+        <div class="guide-check-item">
+          <span class="guide-check-num">04</span>
+          <div>
+            <strong>What is the timeframe?</strong>
+            <p>Policies do not happen overnight. Show that your model is realistic by acknowledging when and how change unfolds.</p>
+          </div>
+        </div>
+        <div class="guide-check-item">
+          <span class="guide-check-num">05</span>
+          <div>
+            <strong>Why does it matter?</strong>
+            <p>Connect the policy to a real harm you are solving or a real good you are creating. The "why" is your moral anchor.</p>
+          </div>
+        </div>
+        <div class="guide-check-item">
+          <span class="guide-check-num">06</span>
+          <div>
+            <strong>What are the impacts?</strong>
+            <p>Think beyond the immediate effect. Who benefits, who is affected, and what changes in the world because of this policy?</p>
+          </div>
+        </div>
+      </div>
+
+      <h4>Why Debaters Struggle With Policy Motions</h4>
+
+      <p>The most common mistake is treating a policy motion like a values debate. Teams spend their speeches arguing <em>why</em> something should happen and forget to explain <em>how</em> it actually will. The Opposition tears them apart not on principle, but on practicality.</p>
+
+      <p>The second mistake is building a policy that is too ambitious or too vague. A policy that tries to change everything tends to prove nothing. Keep the model focused and defensible.</p>
+
+      <p>The third mistake is ignoring unintended consequences. A good Opposition will find them. A great Government team names them first and explains why the policy is still worth it.</p>
+
+      <h4>Treat It Like a Challenge, Not a Threat</h4>
+
+      <p>Policy motions are hard. That is the point. They reward teams who prepare seriously, think structurally, and can build something under pressure. When you see a policy motion in a semifinal, do not panic. See it as your chance to show that you can not only argue — you can lead.</p>
+
+      <p>Build the policy. Defend it. Own it.</p>
+
+      <div class="guide-author">
+        <div class="guide-author-line"></div>
+        <p class="guide-author-name">Ye Yint Maung</p>
+        <p class="guide-author-date">June 2026</p>
+      </div>
+    </article>
 
   </div>
 </div>
