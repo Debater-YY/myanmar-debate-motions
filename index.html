@@ -301,7 +301,26 @@
       font-weight: 500;
     }
 
-    .motion-en {
+    .tournament-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      font-size: 0.62rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      font-weight: 600;
+      padding: 0.2rem 0.6rem;
+      border-radius: 3px;
+      background: rgba(201,168,76,0.12);
+      color: #8a6d00;
+      border: 1px solid rgba(201,168,76,0.35);
+      margin-top: 0.6rem;
+    }
+
+    .tournament-badge::before {
+      content: '🏆';
+      font-size: 0.7rem;
+    }
       font-size: 0.97rem;
       color: #111111;
       line-height: 1.55;
@@ -706,6 +725,193 @@
       margin: 0 !important;
     }
 
+    .guide-article-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .guide-article-item {
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      overflow: hidden;
+      transition: box-shadow 0.2s;
+    }
+
+    .guide-article-item:hover { box-shadow: 0 2px 10px rgba(0,0,0,0.07); }
+
+    .guide-article-header {
+      width: 100%;
+      background: #ffffff;
+      border: none;
+      padding: 1.2rem 1.5rem;
+      text-align: left;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
+      transition: background 0.2s;
+    }
+
+    .guide-article-header:hover { background: #f9fdf4; }
+    .guide-article-header.open { background: #f4fce8; }
+
+    .guide-article-header-left {
+      display: flex;
+      flex-direction: column;
+      gap: 0.4rem;
+    }
+
+    .guide-article-tags {
+      display: flex;
+      gap: 0.4rem;
+      flex-wrap: wrap;
+    }
+
+    .guide-article-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.05rem;
+      font-weight: 700;
+      color: #111111;
+      line-height: 1.3;
+    }
+
+    .guide-article-header.open .guide-article-title { color: #4a7a0a; }
+
+    .guide-article-preview {
+      font-size: 0.82rem;
+      color: #888888;
+      line-height: 1.5;
+    }
+
+    .guide-article-chevron {
+      font-size: 0.75rem;
+      color: var(--gold);
+      transition: transform 0.3s ease;
+      flex-shrink: 0;
+    }
+
+    .guide-article-header.open .guide-article-chevron { transform: rotate(180deg); }
+
+    .guide-article-body {
+      display: none;
+      padding: 0 1.8rem 1.8rem;
+      background: #fafff5;
+      border-top: 1px solid #e0f0c8;
+    }
+
+    .guide-article-body.open { display: block; }
+
+    .guide-article-body h4 {
+      font-family: 'Playfair Display', serif;
+      font-size: 1rem;
+      font-weight: 700;
+      color: #000000;
+      margin: 1.5rem 0 0.6rem;
+    }
+
+    .guide-article-body p {
+      font-size: 0.92rem;
+      color: #333333;
+      line-height: 1.85;
+      margin-bottom: 0.8rem;
+    }
+
+    .guide-article-body em { color: #5a8a1a; font-style: italic; }
+
+    .guide-article-body .guide-checklist {
+      margin: 1rem 0 1.2rem;
+    }
+      margin-top: 2rem;
+    }
+
+    .guide-reading-title {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.4rem;
+      font-weight: 900;
+      color: #000000;
+      margin-bottom: 0.4rem;
+    }
+
+    .guide-reading-subtitle {
+      font-size: 0.88rem;
+      color: #666666;
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+
+    .guide-reading-list {
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+    }
+
+    .guide-reading-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+      background: #ffffff;
+      border: 1px solid #e8e8e8;
+      border-radius: 8px;
+      padding: 1.1rem 1.3rem;
+      text-decoration: none;
+      transition: all 0.2s;
+    }
+
+    .guide-reading-item:hover {
+      border-color: var(--gold);
+      box-shadow: 0 2px 8px rgba(141,198,63,0.15);
+    }
+
+    .guide-reading-icon {
+      font-size: 1.4rem;
+      flex-shrink: 0;
+      margin-top: 0.1rem;
+    }
+
+    .guide-reading-info {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+      flex: 1;
+    }
+
+    .guide-reading-name {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #111111;
+    }
+
+    .guide-reading-source {
+      font-size: 0.75rem;
+      color: var(--gold);
+      font-weight: 500;
+      letter-spacing: 0.03em;
+    }
+
+    .guide-reading-desc {
+      font-size: 0.82rem;
+      color: #555555;
+      line-height: 1.6;
+      margin-top: 0.2rem;
+    }
+
+    .guide-reading-arrow {
+      font-size: 1rem;
+      color: var(--gold);
+      flex-shrink: 0;
+      margin-top: 0.2rem;
+    }
+
+    .guide-reading-more {
+      font-size: 0.8rem;
+      color: #aaaaaa;
+      margin-top: 1rem;
+      font-style: italic;
+    }
+
     /* FOOTER */
     footer {
       border-top: 1px solid rgba(201,168,76,0.1);
@@ -983,95 +1189,102 @@
 
     <div class="guide-divider"></div>
 
-    <!-- BLOG POST -->
-    <article class="guide-article">
-      <div class="guide-article-meta">
-        <span class="guide-tag">Policy Motions</span>
-        <span class="guide-tag">BP & KP</span>
-        <span class="guide-tag">Competitive Debate</span>
+    <!-- ARTICLES LIST -->
+    <div class="guide-article-list">
+
+      <!-- ARTICLE 1 -->
+      <div class="guide-article-item">
+        <button class="guide-article-header" onclick="toggleArticle(this)">
+          <div class="guide-article-header-left">
+            <div class="guide-article-tags">
+              <span class="guide-tag">Policy Motions</span>
+              <span class="guide-tag">BP & KP</span>
+              <span class="guide-tag">Competitive Debate</span>
+            </div>
+            <div class="guide-article-title">Policy Motions: The Hardest Motions in Debate</div>
+            <div class="guide-article-preview">Why policy motions appear in semifinals and finals — and how to handle them.</div>
+          </div>
+          <span class="guide-article-chevron">▼</span>
+        </button>
+        <div class="guide-article-body">
+          <p>If you have been debating for a while, you already know the feeling. The motion drops. You read it. It starts with <em>"This House Would…"</em> — and suddenly you are not just arguing a belief or a value. You are being asked to <em>do something</em>. To build a policy. To make it work.</p>
+
+          <p>Policy motions are a different beast. And they are not placed at the beginning of a tournament by accident. You find them in semifinals. You find them in finals. Because they are the motions that separate good debaters from great ones.</p>
+
+          <h4>What Makes Policy Motions Different</h4>
+          <p>Most motions ask you to argue. Policy motions ask you to <em>govern</em>. When a motion calls for an action — a ban, a law, a program, a reform — the Government team cannot simply say the idea is good. They have to show that it <em>works</em>.</p>
+          <p>This is what makes policy motions both exciting and dangerous. A strong belief argument can carry a team through a values debate. But in a policy round, a weak mechanism breaks your entire case.</p>
+
+          <h4>What Every Policy Must Answer</h4>
+          <p>When you face a policy motion, think of yourself as a policymaker, not just a debater. Your policy needs to answer six questions before you walk into the room:</p>
+
+          <div class="guide-checklist">
+            <div class="guide-check-item">
+              <span class="guide-check-num">01</span>
+              <div><strong>What is the action?</strong><p>Be precise. Vague policies lose rounds. Define exactly what your government is doing.</p></div>
+            </div>
+            <div class="guide-check-item">
+              <span class="guide-check-num">02</span>
+              <div><strong>Who carries it out?</strong><p>Name the actor — which ministry, institution, or body is responsible. This is your focal point.</p></div>
+            </div>
+            <div class="guide-check-item">
+              <span class="guide-check-num">03</span>
+              <div><strong>How does it happen?</strong><p>Describe the mechanism. How is the policy enforced, funded, or implemented?</p></div>
+            </div>
+            <div class="guide-check-item">
+              <span class="guide-check-num">04</span>
+              <div><strong>What is the timeframe?</strong><p>Policies do not happen overnight. Show that your model is realistic by acknowledging when and how change unfolds.</p></div>
+            </div>
+            <div class="guide-check-item">
+              <span class="guide-check-num">05</span>
+              <div><strong>Why does it matter?</strong><p>Connect the policy to a real harm you are solving or a real good you are creating. The "why" is your moral anchor.</p></div>
+            </div>
+            <div class="guide-check-item">
+              <span class="guide-check-num">06</span>
+              <div><strong>What are the impacts?</strong><p>Think beyond the immediate effect. Who benefits, who is affected, and what changes in the world because of this policy?</p></div>
+            </div>
+          </div>
+
+          <h4>Why Debaters Struggle With Policy Motions</h4>
+          <p>The most common mistake is treating a policy motion like a values debate. Teams spend their speeches arguing <em>why</em> something should happen and forget to explain <em>how</em> it actually will. The Opposition tears them apart not on principle, but on practicality.</p>
+          <p>The second mistake is building a policy that is too ambitious or too vague. A policy that tries to change everything tends to prove nothing. Keep the model focused and defensible.</p>
+          <p>The third mistake is ignoring unintended consequences. A good Opposition will find them. A great Government team names them first and explains why the policy is still worth it.</p>
+
+          <h4>Treat It Like a Challenge, Not a Threat</h4>
+          <p>Policy motions are hard. That is the point. They reward teams who prepare seriously, think structurally, and can build something under pressure. When you see a policy motion in a semifinal, do not panic. See it as your chance to show that you can not only argue — you can lead.</p>
+          <p>Build the policy. Defend it. Own it.</p>
+
+          <div class="guide-author">
+            <div class="guide-author-line"></div>
+            <p class="guide-author-name">Ye Yint Maung</p>
+            <p class="guide-author-date">June 2026</p>
+          </div>
+        </div>
       </div>
 
-      <h3>Policy Motions: The Hardest Motions in Debate</h3>
+    </div><!-- end guide-article-list -->
 
-      <p>If you have been debating for a while, you already know the feeling. The motion drops. You read it. It starts with <em>"This House Would…"</em> — and suddenly you are not just arguing a belief or a value. You are being asked to <em>do something</em>. To build a policy. To make it work.</p>
+    <div class="guide-divider"></div>
 
-      <p>Policy motions are a different beast. And they are not placed at the beginning of a tournament by accident. You find them in semifinals. You find them in finals. Because they are the motions that separate good debaters from great ones.</p>
+    <!-- RECOMMENDED READING -->
+    <div class="guide-reading">
+      <h3 class="guide-reading-title">📚 Recommended Reading</h3>
+      <p class="guide-reading-subtitle">Useful books and resources for Myanmar debaters who want to go deeper.</p>
 
-      <h4>What Makes Policy Motions Different</h4>
-
-      <p>Most motions ask you to argue. Policy motions ask you to <em>govern</em>. When a motion calls for an action — a ban, a law, a program, a reform — the Government team cannot simply say the idea is good. They have to show that it <em>works</em>.</p>
-
-      <p>This is what makes policy motions both exciting and dangerous. A strong belief argument can carry a team through a values debate. But in a policy round, a weak mechanism breaks your entire case.</p>
-
-      <h4>What Every Policy Must Answer</h4>
-
-      <p>When you face a policy motion, think of yourself as a policymaker, not just a debater. Your policy needs to answer six questions before you walk into the room:</p>
-
-      <div class="guide-checklist">
-        <div class="guide-check-item">
-          <span class="guide-check-num">01</span>
-          <div>
-            <strong>What is the action?</strong>
-            <p>Be precise. Vague policies lose rounds. Define exactly what your government is doing.</p>
+      <div class="guide-reading-list">
+        <a class="guide-reading-item" href="https://cambridgedebating.com/wp-content/uploads/2017/07/bp-format-and-basic-argumentation.pdf" target="_blank" rel="noopener noreferrer">
+          <div class="guide-reading-icon">📄</div>
+          <div class="guide-reading-info">
+            <span class="guide-reading-name">BP Format and Basic Argumentation</span>
+            <span class="guide-reading-source">Cambridge Debating Union — Free PDF</span>
+            <span class="guide-reading-desc">A clear introduction to British Parliamentary format, covering structure, roles, and how to build strong arguments.</span>
           </div>
-        </div>
-        <div class="guide-check-item">
-          <span class="guide-check-num">02</span>
-          <div>
-            <strong>Who carries it out?</strong>
-            <p>Name the actor — which ministry, institution, or body is responsible. This is your focal point.</p>
-          </div>
-        </div>
-        <div class="guide-check-item">
-          <span class="guide-check-num">03</span>
-          <div>
-            <strong>How does it happen?</strong>
-            <p>Describe the mechanism. How is the policy enforced, funded, or implemented?</p>
-          </div>
-        </div>
-        <div class="guide-check-item">
-          <span class="guide-check-num">04</span>
-          <div>
-            <strong>What is the timeframe?</strong>
-            <p>Policies do not happen overnight. Show that your model is realistic by acknowledging when and how change unfolds.</p>
-          </div>
-        </div>
-        <div class="guide-check-item">
-          <span class="guide-check-num">05</span>
-          <div>
-            <strong>Why does it matter?</strong>
-            <p>Connect the policy to a real harm you are solving or a real good you are creating. The "why" is your moral anchor.</p>
-          </div>
-        </div>
-        <div class="guide-check-item">
-          <span class="guide-check-num">06</span>
-          <div>
-            <strong>What are the impacts?</strong>
-            <p>Think beyond the immediate effect. Who benefits, who is affected, and what changes in the world because of this policy?</p>
-          </div>
-        </div>
+          <span class="guide-reading-arrow">→</span>
+        </a>
       </div>
 
-      <h4>Why Debaters Struggle With Policy Motions</h4>
-
-      <p>The most common mistake is treating a policy motion like a values debate. Teams spend their speeches arguing <em>why</em> something should happen and forget to explain <em>how</em> it actually will. The Opposition tears them apart not on principle, but on practicality.</p>
-
-      <p>The second mistake is building a policy that is too ambitious or too vague. A policy that tries to change everything tends to prove nothing. Keep the model focused and defensible.</p>
-
-      <p>The third mistake is ignoring unintended consequences. A good Opposition will find them. A great Government team names them first and explains why the policy is still worth it.</p>
-
-      <h4>Treat It Like a Challenge, Not a Threat</h4>
-
-      <p>Policy motions are hard. That is the point. They reward teams who prepare seriously, think structurally, and can build something under pressure. When you see a policy motion in a semifinal, do not panic. See it as your chance to show that you can not only argue — you can lead.</p>
-
-      <p>Build the policy. Defend it. Own it.</p>
-
-      <div class="guide-author">
-        <div class="guide-author-line"></div>
-        <p class="guide-author-name">Ye Yint Maung</p>
-        <p class="guide-author-date">June 2026</p>
-      </div>
-    </article>
+      <p class="guide-reading-more">More resources coming soon.</p>
+    </div>
 
   </div>
 </div>
@@ -1170,6 +1383,14 @@
 
     // EDUCATION
     { id:21, format:"BP", level:"High School", topic:"Education", en:"This house would ban private tutoring.", mm:"ဤလွှတ်တော်သည် ပုဂ္ဂလိကကျူရှင်များကို ပိတ်ပင်သွားမည်။" },
+    { id:22, format:"BP", level:"High School", topic:"Education", en:"This House, as teachers, would encourage a culture of questioning in the classroom.", mm:"ဤလွှတ်တော်သည် ဆရာဆရာမများအနေဖြင့် စာသင်ခန်းတွင်း မေးခွန်းထုတ်သည့် အလေ့အထကို အားပေးသွားမည်။" },
+    { id:23, format:"BP", level:"High School", topic:"Education", en:"This House believes that online classrooms are superior to in-person classrooms.", mm:"ဤလွှတ်တော်သည် အွန်လိုင်းသင်ခန်းများသည် တိုက်ရိုက်သမရိုးကျစာသင်ခန်းများထက် သာလွန်ကြောင်း ယုံကြည်သည်။" },
+    { id:24, format:"BP", level:"University", topic:"Education", en:"This House regards the denial of the right to education in Myanmar as a violation of human rights.", mm:"ဤလွှတ်တော်သည် မြန်မာနိုင်ငံတွင် ပညာသင်ကြားပိုင်ခွင့်အခွင့်အရေးကို ငြင်းပယ်ခြင်းသည် လူ့အခွင့်အရေး ချိုးဖောက်မှုတစ်ခုဖြစ်သည်ဟု သတ်မှတ်သည်။" },
+    { id:25, format:"KP", level:"High School", topic:"Education", en:"The use of grading systems in education does more harm than good.", mm:"ပညာရေးတွင် အဆင့်သတ်မှတ်ခြင်းစနစ် အသုံးပြုမှုသည် အကျိုးထက် အကျိုးနည်းစေသည်။" },
+    { id:26, format:"BP", level:"High School", topic:"Education", en:"This House, as teachers, is concerned about students' increasing use of artificial intelligence tools.", mm:"ဤလွှတ်တော်သည် ဆရာဆရာမများအနေဖြင့် ကျောင်းသူကျောင်းသားများ၏ ဉာဏ်ရည်တု ကိရိယာများ တိုးမြင့်အသုံးပြုမှုကို စိုးရိမ်သည်။" },
+    { id:27, format:"BP", level:"University", topic:"Education", en:"This House regrets that military spending in Myanmar vastly outweighs education spending.", mm:"ဤလွှတ်တော်သည် မြန်မာနိုင်ငံတွင် စစ်ရေးအသုံးစရိတ်သည် ပညာရေးအသုံးစရိတ်ထက် အဆမတန်များပြားနေခြင်းကို နောင်တရသည်။" },
+    { id:28, format:"BP", level:"University", topic:"Environment", en:"This House believes that developed countries have a greater responsibility to combat climate change.", mm:"ဤလွှတ်တော်သည် ရာသီဥတုပြောင်းလဲမှုကို တိုက်ဖျက်ရာတွင် ဖွံ့ဖြိုးပြီးနိုင်ငံများက ပိုမိုတာဝန်ရှိသည်ဟု ယုံကြည်သည်။", tournament:"Kokko BP Debate Tournament 2023" },
+    { id:29, format:"BP", level:"High School", topic:"Education", en:"This House believes that schools should prioritize teaching life skills over academic subjects.", mm:"ဤလွှတ်တော်သည် ကျောင်းများသည် ပညာရေးဆိုင်ရာဘာသာရပ်များထက် လက်တွေ့ဘဝရေးရာစွမ်းရည်များကို ပိုမိုဦးစားပေး သင်ကြားသင့်သည်ဟု ယုံကြည်သည်။", tournament:"Kokko BP Debate Tournament 2023" },
   ];
 
   // ── STATE ────────────────────────────────────────────────────────────────
@@ -1190,6 +1411,7 @@
       const fmtClass = m.format === 'BP' ? 'tag-bp' : 'tag-kp';
       const lvlClass = m.level === 'High School' ? 'tag-hs' : 'tag-uni';
       const topicDisplay = Array.isArray(m.topic) ? m.topic.join(' · ') : m.topic;
+      const tournamentBadge = m.tournament ? `<div><span class="tournament-badge">${m.tournament}</span></div>` : '';
       return `
         <div class="motion-card">
           <div class="card-tags">
@@ -1199,6 +1421,7 @@
           </div>
           <p class="motion-en">${m.en}</p>
           <p class="motion-mm">${m.mm}</p>
+          ${tournamentBadge}
         </div>`;
     }).join('');
   }
@@ -1222,7 +1445,21 @@
     filterMotions();
   }
 
-  // ── FAQ ACCORDION ────────────────────────────────────────────────────────
+  // ── GUIDE ACCORDION ──────────────────────────────────────────────────────
+  function toggleArticle(btn) {
+    const body = btn.nextElementSibling;
+    const isOpen = btn.classList.contains('open');
+    document.querySelectorAll('.guide-article-header.open').forEach(h => {
+      h.classList.remove('open');
+      h.nextElementSibling.classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.classList.add('open');
+      body.classList.add('open');
+    }
+  }
+
+  // ── FAQ ACCORDION ─────────────────────────────────────────────────────────
   function toggleFaq(btn) {
     const answer = btn.nextElementSibling;
     const isOpen = btn.classList.contains('open');
