@@ -15,8 +15,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
   <style>
     :root {
-      --gold: #8dc63f;
-      --gold-light: #8dc63f;
+      --gold: #8B2E2E;
+      --gold-light: #8B2E2E;
       --dark: #0e0c0a;
       --dark-2: #1a1712;
       --dark-3: #242018;
@@ -25,8 +25,8 @@
       --cream-2: #000000;
       --text: #000000;
       --text-dim: #7a7268;
-      --red: #c0392b;
-      --green: #27ae60;
+      --red: #8B2E2E;
+      --green: #8B2E2E;
       --blue: #2980b9;
     }
 
@@ -47,7 +47,7 @@
       z-index: 100;
       background: rgba(14,12,10,0.95);
       backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(201,168,76,0.15);
+      border-bottom: 1px solid rgba(139,46,46,0.15);
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -89,7 +89,7 @@
 
     .nav-links a:hover,
     .nav-links a.active {
-      color: #8dc63f;
+      color: #8B2E2E;
     }
 
     /* PAGES */
@@ -108,7 +108,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(201,168,76,0.08) 0%, transparent 70%);
+      background: radial-gradient(ellipse 80% 60% at 50% 0%, rgba(139,46,46,0.08) 0%, transparent 70%);
       pointer-events: none;
     }
 
@@ -169,7 +169,7 @@
     /* DIVIDER */
     .divider {
       height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(201,168,76,0.3), transparent);
+      background: linear-gradient(90deg, transparent, rgba(139,46,46,0.3), transparent);
       margin: 0 2.5rem;
     }
 
@@ -191,7 +191,7 @@
     .search-wrap input {
       width: 100%;
       background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.2);
+      border: 1px solid rgba(139,46,46,0.2);
       border-radius: 6px;
       padding: 0.65rem 1rem 0.65rem 2.5rem;
       color: #ffffff;
@@ -221,7 +221,7 @@
 
     .filter-btn {
       background: var(--dark-3);
-      border: 1px solid rgba(201,168,76,0.15);
+      border: 1px solid rgba(139,46,46,0.15);
       border-radius: 4px;
       padding: 0.55rem 1rem;
       color: #ffffff;
@@ -294,7 +294,7 @@
 
     .tag-bp { background: rgba(41,128,185,0.15); color: #2980b9; border: 1px solid rgba(41,128,185,0.3); }
     .tag-kp { background: rgba(39,174,96,0.12); color: #27ae60; border: 1px solid rgba(39,174,96,0.25); }
-    .tag-hs { background: rgba(201,168,76,0.12); color: #b8860b; border: 1px solid rgba(201,168,76,0.3); }
+    .tag-hs { background: rgba(139,46,46,0.12); color: #b8860b; border: 1px solid rgba(139,46,46,0.3); }
     .tag-uni { background: rgba(192,57,43,0.1); color: #c0392b; border: 1px solid rgba(192,57,43,0.25); }
 
     .topic-tag {
@@ -319,9 +319,9 @@
       font-weight: 600;
       padding: 0.2rem 0.6rem;
       border-radius: 3px;
-      background: rgba(201,168,76,0.12);
+      background: rgba(139,46,46,0.12);
       color: #8a6d00;
-      border: 1px solid rgba(201,168,76,0.35);
+      border: 1px solid rgba(139,46,46,0.35);
       margin-top: 0.6rem;
     }
 
@@ -393,7 +393,7 @@
 
     .about-divider {
       height: 1px;
-      background: rgba(201,168,76,0.15);
+      background: rgba(139,46,46,0.15);
       margin: 2.5rem 0;
     }
 
@@ -443,7 +443,7 @@
 
     .contact-box p { color: #333333; font-size: 0.88rem; line-height: 1.7; }
 
-    .contact-box a { color: #8dc63f; text-decoration: none; font-weight: 600; }
+    .contact-box a { color: #8B2E2E; text-decoration: none; font-weight: 600; }
     .contact-box a:hover { text-decoration: underline; }
 
     /* ── FAQ PAGE ── */
@@ -486,7 +486,7 @@
       font-weight: 700;
       margin: 2.5rem 0 1rem;
       padding-bottom: 0.5rem;
-      border-bottom: 1px solid rgba(141,198,63,0.2);
+      border-bottom: 1px solid rgba(139,46,46,0.2);
       letter-spacing: 0.02em;
     }
 
@@ -608,7 +608,7 @@
 
     .guide-divider {
       height: 1px;
-      background: rgba(141,198,63,0.2);
+      background: rgba(139,46,46,0.2);
       margin: 2rem 0;
     }
 
@@ -634,9 +634,9 @@
       font-weight: 600;
       padding: 0.2rem 0.6rem;
       border-radius: 3px;
-      background: rgba(141,198,63,0.12);
+      background: rgba(139,46,46,0.12);
       color: #5a8a1a;
-      border: 1px solid rgba(141,198,63,0.25);
+      border: 1px solid rgba(139,46,46,0.25);
     }
 
     .guide-article h3 {
@@ -870,7 +870,7 @@
 
     .guide-reading-item:hover {
       border-color: var(--gold);
-      box-shadow: 0 2px 8px rgba(141,198,63,0.15);
+      box-shadow: 0 2px 8px rgba(139,46,46,0.15);
     }
 
     .guide-reading-icon {
@@ -922,7 +922,7 @@
 
     /* FOOTER */
     footer {
-      border-top: 1px solid rgba(201,168,76,0.1);
+      border-top: 1px solid rgba(139,46,46,0.1);
       padding: 2rem 2.5rem;
       display: flex;
       justify-content: space-between;
